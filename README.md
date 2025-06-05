@@ -1,3 +1,11 @@
 # Practice
 **As the name suggests** Its a practice repository that i am making just keeping track of my learning and also learning more about GITHUB.
 Thanks for reading 😁
+
+_**FOR LOOP EXPLAINER**_
+for (int i = 0; i<5; i++) { 
+int i. This means that in the starting of the loop its value is 0.
+    i < 6 - This tells the condition that until i is less than 6, execute/ iterate.
+    i++ - This tells that after each iteration, increment the value of i by +1.
+    The values would stop at 5 coz its less than 6.
+}
