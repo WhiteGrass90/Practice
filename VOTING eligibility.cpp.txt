@@ -1,0 +1,38 @@
+#include <iostream>
+
+int main() {
+  // Write code here
+  int age;
+  bool citizen;
+  bool registered;
+  //Prompts the user asking about their respective details below.😁//
+  std::cout << "What's your Age?\n";
+  std::cin >> age;
+
+  std::cout << "Enter 1 for YES & 0 for NO.\n";
+  std::cout << "Are you a US Citizen?\n";
+  std::cin >> citizen;
+
+  std::cout << "Are you registered to vote?\n";
+  std::cin >> registered;
+
+  if (age>=18 && citizen == true && registered == true) {
+    std::cout << "You are eligible to Vote ©🐐";
+  }
+  else if (age < 18) {
+    std::cout << "You are not old enough to vote.";
+  }
+  else if(citizen == false) {
+    std::cout << "You are not a US citizen to be eligible to Vote.";
+  }
+  else if(registered == false) {
+    std::cout << "You need to register first, Dumba**";
+  }
+  else {
+    std::cout << "You do not have the requirements to vote.";
+  }
+}
+
+
+
+//Code this logic better, coz if one of the condition is met , this dumbass says youre eligible to vote.
