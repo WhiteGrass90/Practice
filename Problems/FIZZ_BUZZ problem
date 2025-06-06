@@ -1,0 +1,35 @@
+//Fizz_Buzz.
+
+#include <iostream>
+
+int main() {
+  //First we write a program that would print Fizz on multiples of 3.
+
+  //Half-Figured it out how to print buzz at multiples of 5 and fizz @ multiples of3.
+  //Now to figure out to print FizzBuzz @multiples of 3 & 5. 
+  //Done Figured out to Print fizzBuzz @multiples of 3 & 5.- it toook an hour+ {8:35 to 9:50 AM}.
+  //Now to figure out how to print Fizz @3s & Buzz @5s &FizzBuzz @3,5s.
+  //Done @10:15, coz i was printing values no matter what.
+
+  //Logic Explaination: Print Fizz@3s, Buzz@5s & print FizzBuzz @3s & 5s.else print the numbers
+
+
+  std::string Fizz_Print;
+  for(int i = 1; i<=100; ++i) {
+    if ((i%3 == 0) && (i%5 == 0)) {
+      std::cout <<"FizzBuzz\n";
+    }
+    else if(i % 3== 0) {
+      std::cout << "Fizz\n";
+      // Fizz_count += 3;
+    }
+    else if (i % 5 == 0) {
+      std::cout << "Buzz\n";
+      // Buzz_count += 5;
+    }
+    else {
+      std::cout << i << '\n';
+    }
+  }
+}
+
