@@ -1,0 +1,76 @@
+#include <iostream>
+
+//Writing Some Functions
+//Then a simple if, else if, else conditional.
+
+double zadd() {
+    double a1;
+    double a2;
+    std::cout << "Enter your 1st number: ";
+    std::cin >> a1;
+    std::cout << "Enter 2nd num: ";
+    std::cin >> a2;
+
+    return a1 + a2;
+    // return 0;
+}
+
+double zmul() {
+    double a1;
+    double a2;
+    std::cout << "Enter your 1st number: ";
+    std::cin >> a1;
+    std::cout << "Enter 2nd num: ";
+    std::cin >> a2;
+
+    return a1 * a2;
+}
+
+double zmin() {
+    double a1;
+    double a2;
+    std::cout << "Enter your 1st number: ";
+    std::cin >> a1;
+    std::cout << "Enter 2nd num: ";
+    std::cin >> a2;
+
+    return a2-a1;
+}
+
+double zdiv() {
+    double a1;
+    double a2;
+    std::cout << "Enter your 1st number: ";
+    std::cin >> a1;
+    std::cout << "Enter 2nd num: ";
+    std::cin >> a2;
+
+    return a2/a1;
+}
+
+int main () {
+    std::string choice;
+    std::cout << "Choose Add, Sub, Multiply, Divide: ";
+    std::cin >> choice;
+
+    //we write some conditionals.
+
+    if (choice == "*") {
+        std::cout << zmul();
+        return 0;
+    }
+    else if (choice == "+") {
+        std::cout << zadd();
+    }
+    else if (choice == "-") {
+        std::cout << zmin();
+    }
+    else if (choice == "/") {
+        std::cout << zdiv();
+    }
+    else {
+        std::cout << "Enter Valid abstraction. 😁";
+    }
+    
+    return 0;
+}
